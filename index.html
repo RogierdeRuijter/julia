@@ -12,13 +12,17 @@
   <style>
     html {
       font-family: 'Montserrat', sans-serif;
+      font-weight: 100;
     }
 
-    h1 {
-      font-weight: 400;
+    #title {
+      height: 40px;
       width: 400px;
       max-width: 100%;
       text-align: center;
+      font-size: 2em;
+      margin-block-start: 0.67em;
+      margin-block-end: 0.67em;
     }
 
     #content-container {
@@ -37,11 +41,11 @@
     }
 
     #content-container img {
-        width: 400px;
-        max-width: 100%;
-        min-height: 150px;
-        border-radius: 10px;
-    }
+      width: 400px;
+      max-width: 100%;
+      min-height: 150px;
+      border-radius: 10px;
+    } 
 
     #content-container iframe {
       width: 400px;
@@ -52,7 +56,7 @@
 </head>
 <body>
     <div id="content-container">
-        <h1>Julia</h1>
+        <div id="title">Julia</div>
         <div><img src="./assets/hedgehog.jpeg" id="hedgehog"></div>
         <div><img src="./assets/kawhi.jpeg"></div>
         <div><img src="./assets/sd.jpeg"></div>
