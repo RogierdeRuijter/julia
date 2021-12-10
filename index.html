@@ -1,61 +1,120 @@
 <html lang="en">
-<head>
-  <meta charset="utf-8">
-  <title>Julia</title>
-  <meta name="description" content="J.">
-  <meta name="viewport" content="width=device-width, height=device-height, initial-scale=1">
-  <meta http-equiv="Access-Control-Allow-Origin" content="http://localhost:3000">
-  <link rel="icon" type="image/png" href="./favicon.svg">
-  <link rel="preconnect" href="https://fonts.gstatic.com"> 
-  <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,700;1,400&display=swap" rel="stylesheet">
-  
-  <style>
-    html {
-      font-family: 'Montserrat', sans-serif;
-      font-weight: 100;
-    }
-    
-    #content-container {
-      display: flex;
-      justify-content: center;
-      flex-direction: column;
-      align-items: center;
-    }
-    
-    #content-container div {
-      margin-bottom: 16px;
-    }
+  <head>
+    <meta charset="utf-8" />
+    <title>Julia</title>
+    <meta name="description" content="J." />
+    <meta
+      name="viewport"
+      content="width=device-width, height=device-height, initial-scale=1"
+    />
+    <meta
+      http-equiv="Access-Control-Allow-Origin"
+      content="http://localhost:3000"
+    />
+    <link rel="icon" type="image/png" href="./favicon.svg" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,700;1,400&display=swap"
+      rel="stylesheet"
+    />
 
-    #hedgehog {
-      min-height: 300px !important;
-    }
+    <style>
+      html {
+        font-family: "Montserrat", sans-serif;
+        font-weight: 100;
+      }
 
-    #content-container img {
-      width: 400px;
-      max-width: 100%;
-      min-height: 150px;
-      border-radius: 8px;
-    } 
+      #content-container {
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        align-items: center;
+      }
 
-    #content-container iframe {
-      width: 400px;
-      max-width: 100%;
-      height: 400px;
-    }
-  </style>
-</head>
-<body>
+      #content-container div {
+        margin-bottom: 16px;
+      }
+
+      #hedgehog {
+        min-height: 300px !important;
+      }
+
+      #content-container img {
+        width: 400px;
+        max-width: 100%;
+        min-height: 150px;
+        border-radius: 8px;
+      }
+
+      #content-container iframe {
+        width: 400px;
+        max-width: 100%;
+        height: 400px;
+      }
+    </style>
+  </head>
+  <body>
     <div id="content-container">
-        <div><img src="./assets/hedgehog.jpeg" id="hedgehog"></div>
-        <div><img src="./assets/kawhi.jpeg"></div>
-        <div><img src="./assets/sd.jpeg"></div>
-        <div><img src="./assets/vlie.jpeg"></div>
-        <div><img src="./assets/text.jpeg"></div>
-        <div><img src="./assets/ie.jpeg"></div>
-        <div><img src="./assets/dodo.jpeg"></div>
-        <div><img src="./assets/hachi.jpeg"></div>
-        <div><img src="./assets/fuji.jpeg"></div>
-        <div><img src="./assets/stud.jpeg"></div>
+      <div>
+        <picture>
+          <source type="image/webp" srcset="./assets/hedgehog.webp" />
+          <img src="./assets/hedgehog.jpeg" />
+        </picture>
+      </div>
+      <div>
+        <picture>
+          <source type="image/webp" srcset="./assets/kawhi.webp" />
+          <img src="./assets/kawhi.jpeg" />
+        </picture>
+      </div>
+      <div>
+        <picture>
+          <source type="image/webp" srcset="./assets/sd.webp" />
+          <img src="./assets/sd.jpeg" />
+        </picture>
+      </div>
+      <div>
+        <picture>
+          <source type="image/webp" srcset="./assets/vlie.webp" />
+          <img src="./assets/vlie.jpeg" />
+        </picture>
+      </div>
+      <div>
+        <picture>
+          <source type="image/webp" srcset="./assets/text.webp" />
+          <img src="./assets/text.jpeg" />
+        </picture>
+      </div>
+      <div>
+        <picture>
+          <source type="image/webp" srcset="./assets/ie.webp" />
+          <img src="./assets/ie.jpeg" />
+        </picture>
+      </div>
+      <div>
+        <picture>
+          <source type="image/webp" srcset="./assets/dodo.webp" />
+          <img src="./assets/dodo.jpeg" />
+        </picture>
+      </div>
+      <div>
+        <picture>
+          <source type="image/webp" srcset="./assets/hachi.webp" />
+          <img src="./assets/hachi.jpeg" />
+        </picture>
+      </div>
+      <div>
+        <picture>
+          <source type="image/webp" srcset="./assets/fuji.webp" />
+          <img src="./assets/fuji.jpeg" />
+        </picture>
+      </div>
+      <div>
+        <picture>
+          <source type="image/webp" srcset="./assets/stud.webp" />
+          <img src="./assets/stud.jpeg" />
+        </picture>
+      </div>
     </div>
-</body>
+  </body>
 </html>
