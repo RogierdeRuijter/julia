@@ -7,7 +7,6 @@
       name="viewport"
       content="width=device-width, height=device-height, initial-scale=1"
     />
-
     <style>
       #content-container {
         display: flex;
@@ -18,6 +17,10 @@
 
       #content-container div {
         margin-bottom: 16px;
+      }
+
+      #hedgehog {
+        min-height: 300px !important;
       }
 
       #content-container img {
@@ -32,7 +35,7 @@
       <div>
         <picture>
           <source type="image/webp" srcset="./assets/hedgehog.webp" />
-          <img src="./assets/hedgehog.jpeg" width="400" />
+          <img src="./assets/hedgehog.jpeg" width="400" id="hedgehog" />
         </picture>
       </div>
       <div>
