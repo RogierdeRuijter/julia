@@ -1,4 +1,4 @@
-<html lang="en">
+<html lang="en" style="background-color: #fff">
   <head>
     <meta charset="utf-8" />
     <title>Julia</title>
@@ -15,7 +15,7 @@
         align-items: center;
       }
 
-      #content-container div {
+      #content-container article {
         margin-bottom: 16px;
       }
 
@@ -23,19 +23,45 @@
         min-height: 300px !important;
       }
 
+      article {
+        position: relative;
+      }
+
       #content-container img {
         max-width: 100%;
         max-height: 100%;
+      }
+
+      .description-container {
+        position: absolute;
+        display: flex;
+        align-items: center;
+        left: 4px;
+        top: 4px;
+        color: #fff;
+      }
+
+      .description-container .icon {
+        margin-right: 2px;
+      }
+
+      .description-container .title {
+        font-size: 14px;
+      }
+
+      .description-container .description {
+        font-size: 12px;
       }
     </style>
   </head>
   <body>
     <div id="content-container">
-      <div style="position: relative">
-        <div style="position: absolute; display: flex; left: 4px; top: 4px">
-          <div>🦔</div>
-          <div>Cici<br>
-          Our pet
+      <article>
+        <div class="description-container">
+          <div class="icon">🦔</div>
+          <div>
+            <div class="title">Cici</div>
+            <div class="description">Our pet</div>
           </div>
         </div>
         <img
@@ -43,55 +69,111 @@
           width="400"
           id="hedgehog"
         />
-      </div>
-      <div>
+      </article>
+      <article>
+        <div class="description-container">
+          <div class="icon">🐕</div>
+          <div>
+            <div class="title">SD</div>
+            <div class="description">Favo show</div>
+          </div>
+        </div>
         <img
           srcset="./assets/sd2x.webp 2x, ./assets/sd1x.webp 1x"
           width="400"
         />
-      </div>
-      <div>
+      </article>
+      <article>
+        <div class="description-container">
+          <div class="icon">🏝</div>
+          <div>
+            <div class="title">Vlieland</div>
+            <div class="description">Every year, one weekend</div>
+          </div>
+        </div>
         <img
           srcset="./assets/vlie2x.webp 2x, ./assets/vlie1x.webp 1x"
           width="400"
         />
-      </div>
-      <div>
+      </article>
+      <article>
+        <!-- <div class="description-container">
+          <div class="icon">🛋</div>
+          <div>
+            <div class="title">Home</div>
+            <div class="description">Checking in</div>
+          </div>
+        </div> -->
         <img
           srcset="./assets/text2x.webp 2x, ./assets/text1x.webp 1x"
           width="400"
         />
-      </div>
-      <div>
+      </article>
+      <article>
+        <div class="description-container">
+          <div class="icon">🇮🇪</div>
+          <div>
+            <div class="title">Ireland</div>
+            <div class="description">Your home</div>
+          </div>
+        </div>
         <img
           srcset="./assets/ie2x.webp 2x, ./assets/ie1x.webp 1x"
           width="400"
         />
-      </div>
-      <div>
+      </article>
+      <article>
+        <div class="description-container">
+          <div class="icon">🦤</div>
+          <div>
+            <div class="title">Dodo</div>
+            <div class="description">Sorry the Dutch killed it</div>
+          </div>
+        </div>
         <img
           srcset="./assets/dodo2x.webp 2x, ./assets/dodo1x.webp 1x"
           width="400"
         />
-      </div>
-      <div>
+      </article>
+      <article>
+        <div class="description-container">
+          <div class="icon">🏯</div>
+          <div>
+            <div class="title">Hachiko</div>
+            <div class="description">Sleeping at a shrine</div>
+          </div>
+        </div>
         <img
           srcset="./assets/hachi2x.webp 2x, ./assets/hachi1x.webp 1x"
           width="400"
         />
-      </div>
-      <div>
+      </article>
+      <article>
+        <div class="description-container">
+          <div class="icon">🗻</div>
+          <div>
+            <div class="title">Mount Fuji</div>
+            <div class="description">Trying to spot it</div>
+          </div>
+        </div>
         <img
           srcset="./assets/fuji2x.webp 2x, ./assets/fuji1x.webp 1x"
           width="400"
         />
-      </div>
-      <div>
+      </article>
+      <article>
+        <div class="description-container">
+          <div class="icon">🛌</div>
+          <div>
+            <div class="title">Studly</div>
+            <div class="description">Dog sitting</div>
+          </div>
+        </div>
         <img
           srcset="./assets/stud2x.webp 2x, ./assets/stud1x.webp 1x"
           width="400"
         />
-      </div>
+      </article>
     </div>
 
     <script>
