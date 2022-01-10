@@ -19,72 +19,167 @@
         margin-bottom: 16px;
       }
 
-      #hedgehog {
-        min-height: 300px !important;
-      }
-
-      #content-container img {
+      #content-container img,
+      picture {
         max-width: 100%;
-        max-height: 100%;
       }
     </style>
   </head>
   <body style="margin: 0">
     <div id="content-container">
       <div>
-        <img
-          srcset="./assets/hedgehog2x.webp 2x, ./assets/hedgehog1x.webp 1x"
-          width="400"
-          id="hedgehog"
-        />
+        <picture>
+          <source
+            srcset="./assets/hedgehog-400.webp 400w, ./assets/hedgehog-800.webp 2x"
+            type="image/webp"
+            media="(max-width: 400px)"
+          />
+          <source
+            srcset="./assets/hedgehog-500.webp 500w, ./assets/hedgehog-1000.webp 2x"
+            type="image/webp"
+          />
+          <img src="./assets/hedgehog-400.webp" alt="" />
+        </picture>
       </div>
       <div>
-        <img
-          srcset="./assets/sd2x.webp 2x, ./assets/sd1x.webp 1x"
-          width="400"
-        />
+        <picture>
+          <source
+            srcset="./assets/sd-400.webp 400w, ./assets/sd-800.webp 2x"
+            type="image/webp"
+            media="(max-width: 400px)"
+          />
+          <source
+            srcset="./assets/sd-500.webp 500w, ./assets/sd-1000.webp 2x"
+            type="image/webp"
+          />
+          <img src="./assets/sd-400.webp" alt="" />
+        </picture>
       </div>
       <div>
-        <img
+        <picture>
+          <source
+            srcset="./assets/vlie-400.webp 400w, ./assets/vlie-800.webp 2x"
+            type="image/webp"
+            media="(max-width: 400px)"
+          />
+          <source
+            srcset="./assets/vlie-500.webp 500w, ./assets/vlie-1000.webp 2x"
+            type="image/webp"
+          />
+          <img src="./assets/vlie-400.webp" alt="" />
+        </picture>
+        <!-- <img
           srcset="./assets/vlie2x.webp 2x, ./assets/vlie1x.webp 1x"
           width="400"
-        />
+        /> -->
       </div>
       <div>
-        <img
+        <picture>
+          <source
+            srcset="./assets/text-400.webp 400w, ./assets/text-800.webp 2x"
+            type="image/webp"
+            media="(max-width: 400px)"
+          />
+          <source
+            srcset="./assets/text-500.webp 500w, ./assets/text-1000.webp 2x"
+            type="image/webp"
+          />
+          <img src="./assets/text-400.webp" alt="" />
+        </picture>
+        <!-- <img
           srcset="./assets/text2x.webp 2x, ./assets/text1x.webp 1x"
           width="400"
-        />
+        /> -->
       </div>
       <div>
-        <img
+        <picture>
+          <source
+            srcset="./assets/ie-400.webp 400w, ./assets/ie-800.webp 2x"
+            type="image/webp"
+            media="(max-width: 400px)"
+          />
+          <source
+            srcset="./assets/ie-500.webp 500w, ./assets/ie-1000.webp 2x"
+            type="image/webp"
+          />
+          <img src="./assets/ie-400.webp" alt="" />
+        </picture>
+        <!-- <img
           srcset="./assets/ie2x.webp 2x, ./assets/ie1x.webp 1x"
           width="400"
-        />
+        /> -->
       </div>
       <div>
-        <img
+        <picture>
+          <source
+            srcset="./assets/dodo-400.webp 400w, ./assets/dodo-800.webp 2x"
+            type="image/webp"
+            media="(max-width: 400px)"
+          />
+          <source
+            srcset="./assets/dodo-500.webp 500w, ./assets/dodo-1000.webp 2x"
+            type="image/webp"
+          />
+          <img src="./assets/ie-400.webp" alt="" />
+        </picture>
+        <!-- <img
           srcset="./assets/dodo2x.webp 2x, ./assets/dodo1x.webp 1x"
           width="400"
-        />
+        /> -->
       </div>
       <div>
-        <img
+        <picture>
+          <source
+            srcset="./assets/hachi-400.webp 400w, ./assets/hachi-800.webp 2x"
+            type="image/webp"
+            media="(max-width: 400px)"
+          />
+          <source
+            srcset="./assets/hachi-500.webp 500w, ./assets/hachi-1000.webp 2x"
+            type="image/webp"
+          />
+          <img src="./assets/hachi-400.webp" alt="" />
+        </picture>
+        <!-- <img
           srcset="./assets/hachi2x.webp 2x, ./assets/hachi1x.webp 1x"
           width="400"
-        />
+        /> -->
       </div>
       <div>
-        <img
+        <picture>
+          <source
+            srcset="./assets/fuji-400.webp 400w, ./assets/fuji-800.webp 2x"
+            type="image/webp"
+            media="(max-width: 400px)"
+          />
+          <source
+            srcset="./assets/fuji-500.webp 500w, ./assets/fuji-1000.webp 2x"
+            type="image/webp"
+          />
+          <img src="./assets/fuji-400.webp" alt="" />
+        </picture>
+        <!-- <img
           srcset="./assets/fuji2x.webp 2x, ./assets/fuji1x.webp 1x"
           width="400"
-        />
+        /> -->
       </div>
       <div>
-        <img
+        <picture>
+          <source
+            srcset="./assets/stud-400.webp 400w, ./assets/stud-800.webp 2x"
+            type="image/webp"
+            media="(max-width: 400px)"
+          />
+          <source
+            srcset="./assets/stud-500.webp 500w, ./assets/stud-1000.webp 2x"
+            type="image/webp"
+          />
+          <img src="./assets/stud-400.webp" alt="" />
+        </picture>
+        <!-- <img
           srcset="./assets/stud2x.webp 2x, ./assets/stud1x.webp 1x"
           width="400"
-        />
+        /> -->
       </div>
     </div>
 
