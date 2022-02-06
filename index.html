@@ -229,10 +229,8 @@
       // determine height of content on this page
       function getMyHeight() {
         //https://stackoverflow.com/a/11864824
-        return Math.max(
-          document.body.scrollHeight,
-          document.documentElement.scrollHeight
-        );
+        const contentContainer = document.getElementById("content-container");
+        return contentContainer.scrollHeight;
       }
 
       // send the latest page dimensions to the parent page on which this iframe is embedded
