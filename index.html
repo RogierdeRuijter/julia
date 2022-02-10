@@ -28,10 +28,6 @@
         max-width: 100%;
       }
 
-      #content-container img {
-        background-color: lightgray;
-      }
-
       /* Use 500px the max width of both the images */
       .container {
         width: 100%;
@@ -54,8 +50,15 @@
         position: absolute;
         top: 0;
         left: 0;
+        opacity: 0;
       }
     </style>
+    <script>
+      /* Only show image once it is fully loaded. This way we don't get the dropdown effect */
+      const showHedgehogImage = () => {
+        document.getElementById("hedgehog-img").style.opacity = 1;
+      };
+    </script>
   </head>
   <body style="margin: 0">
     <div id="content-container">
@@ -71,7 +74,12 @@
               srcset="./assets/hedgehog-500.webp 500w, ./assets/hedgehog-1000.webp 2x"
               type="image/webp"
             />
-            <img alt="hedgehog" src="./assets/hedgehog.jpeg" />
+            <img
+              id="hedgehog-img"
+              alt="hedgehog"
+              src="./assets/hedgehog.jpeg"
+              onload="showHedgehogImage()"
+            />
           </picture>
         </div>
       </div>
